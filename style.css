@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* .logo{
+    border-radius: 50% !important;
+} */
+
+#homepage{
+    height: 100vh;
+    /* background-image: linear-gradient(90deg, #310e68 , #5f0f40 ); */
+}
+
+.overlay{
+    background-image: linear-gradient(90deg, #310e68 , #5f0f40 );
+    width: 100%;
+    opacity: 0.91;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+.nav-link {
+    color: white !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    z-index: 5;
+    padding-right: 10px !important;
+    animation-name: navbar;
+    animation-duration: 3s;
+}
+
+.welcome_text {
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.welcome_text h3{
+    font-size: 3vw;
+    animation-name: hello;
+    animation-duration:3s;
+}
+.welcome_text h1{
+    font-size: 4.5vw;
+    animation-name: welcome;
+    animation-duration: 6s;
+    font-weight:bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+.welcome_text h5{
+    font-size: 2vw;
+    animation-name: responsive;
+    animation-duration: 8s;
+    padding-top: 15%;
+}
+
+/* .welcome_text button{
+    animation-name: button;
+    animation-duration: 8s;
+    font-size: 2vw;
+} */
+
+.carousel-item {
+    height: 100vh;
+    background-color:#e0aebdc5;
+    /* overflow: hidden; */
+}
+
+.laptop {
+    width: 70vw;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.phone {
+    width: 10vw;
+    position: absolute;
+    top: 43%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+.tablet {
+    width: 30vw;
+    position: absolute;
+    top: 42%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.carousel-item h2{
+    font-size: 3vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+@keyframes hello {
+    0%{
+        color: transparent;
+    }
+    20%{
+        color: transparent;
+    }
+}
+
+@keyframes pictures {
+    0%{
+        opacity: 0%;
+    }
+    15%{
+        opacity: 0%;
+    }
+}
+
+@keyframes navbar {
+    0%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 0%;
+    }
+}
+@keyframes welcome {
+    0%{
+        color: transparent;
+    }
+    50%{
+        color: transparent;
+    }
+}
+@keyframes responsive {
+    0%{
+        color: transparent;
+    }
+    60%{
+        color: transparent;
+    }
+}
+@keyframes button {
+    0%{
+        opacity: 0%;
+    }
+    60%{
+        opacity: 0%;
+    }
+}
+
+.home_pictures img{
+    width: 55%;
+    box-shadow: -2px 2px 10px 2px rgba(0, 0, 0, 0.747);
+    animation-name: pictures;
+    animation-duration:3s;
+}
+/* the pictures in the homepage */
+.picture_1 {
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+}
+.picture_2 {
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 66%;
+    transform: translate(-50%, -50%);
+}
+.picture_3{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index:3;  
+}
+
+.fixed-background {
+    overflow: hidden;
+    padding: 3rem 0;
+    text-shadow: -4px 4px 8px black;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    box-shadow: -2px 2px 10px 2px rgba(90, 83, 83, 0.63);
+}
+
+.fixed-background p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5vw;
+    z-index: 5;
+}
+
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    z-index: -999 !important;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    background-image: url(./images/SharedScreenshot.jpg);
+    opacity: 0.5;
+    position: fixed;
+}
+
+.overlay2{
+    background-color: rgb(20, 1, 34);
+    width: 100%;
+    opacity: 0.85;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.more_sites h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+}
+
+.more_sites{
+    background-color: #6350afcb;
+    padding-top: 50vh !important;
+    padding-bottom: 60vh !important;
+}
+
+.more_sites img{
+    width: 40vw;
+    height: 100%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  transition: .5s ease;
+}
+
+.more_sites_pics{
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.more_sites_pic:hover img{
+    transform: scale(1.5);
+}
+
+.overlay3{
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2a1b3d;
+  opacity: 0.85;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: ease;
+}
+.more_sites_pic{
+    position: relative;
+    overflow: hidden;
+}
+.more_sites_pic:hover .overlay3{
+    transform: scale(1);
+}
+
+.overlay3 p{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2vw;
+}
+
+#contact, footer{
+    font-family: 'Raleway', sans-serif;
+    background-color: #2a1b3d;
+}
+
+#contact h1{
+    font-size: 5vw;
+    padding-top: 8.5vh;
+    padding-bottom: 4vh;
+} 
+
+form{
+    padding: 1.1vw;
+    box-shadow: -2px 2px 10px 2px rgb(14, 13, 13);
+    margin: auto;
+    width: 50vw;
+    border-radius: 1vw;
+    background-color: #1b0f2b;
+}
+
+.element {
+    padding-bottom: 10px;
+} 
+
+textarea,
+input{
+    background: transparent;
+    width: 100%;
+    border-top: none;
+    border-left:none;
+    border-right: none;
+    color: white;
+}
+
+ label {
+    font-size: 1.6vw;
+} 
+
+ button{
+    font-size: 1.5vw !important;
+} 
+
+button:hover{
+    font-weight: bolder;
+} 
+
+.socials {
+    text-shadow: -2px 2px 10px rgba(0, 0, 0, 0.527);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 5%;
+    font-size: 1.5vw;
+} 
+
+footer{
+    font-size: 1.1vw;
+} 
+
+.go_up {
+    position: sticky;
+    top: 90vh;
+    z-index: 5;
+    margin-top: -68px;
+}
+.bi-caret-up-square-fill {
+    font-size: 150%;
+    animation-name: fade;
+    animation-duration: 30s;
+    color: #4b1637;
+}
+
+@media only screen and (max-width: 1400px) {}
+@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 992px) {
+    .more_sites{
+        padding-top: 45vh !important;
+        padding-bottom: 67.5vh !important;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .home_pictures img{
+        width: 60%;
+        box-shadow: -7px 7px 5px 7px black;
+    }
+    
+    .picture_1 {
+        z-index: 2;
+        position: absolute;
+        top: 55%;
+        left: 56%;
+        transform: translate(-50%, -50%);
+    }
+    .picture_2 {
+        position: absolute;
+        z-index: 1;
+        top: 45%;
+        left: 66%;
+        transform: translate(-50%, -50%);
+    }
+    .picture_3{
+        position: absolute;
+        top: 68%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        z-index:3;  
+    }
+
+    .more_sites{
+        padding-top: 30vh !important;
+        padding-bottom: 45vh !important;
+    }
+    
+}
+@media only screen and (max-width: 576px) {
+    .more_sites img{
+        width: 70vw;
+        height: 100%;
+        display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 20px;
+    }
+    
+
+}
+@media only screen and (max-width: 400px) {}
