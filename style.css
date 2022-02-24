@@ -242,6 +242,10 @@ html {
     left: 0;
     z-index: 2;
 }
+span{
+    padding-top: 5px;
+    font-size: smaller;
+}
 
 .more_sites h1{
     font-family: 'Raleway', sans-serif;
