@@ -426,7 +426,14 @@ footer{
       margin-right: auto;
       padding-bottom: 20px;
     }
-    
+    .carousel-item {
+        height: 70vh;
+    }
+    .more_sites{
+        padding-top: 20vh !important;
+        padding-bottom: 35vh !important;
+    }
+
 
 }
 @media only screen and (max-width: 400px) {}
