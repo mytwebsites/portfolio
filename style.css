@@ -99,6 +99,7 @@ html {
 }
 .carousel-item h2{
     font-size: 3vw;
+    font-weight: bolder;
     position: absolute;
     top: 80%;
     left: 50%;
